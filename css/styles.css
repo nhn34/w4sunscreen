@@ -391,17 +391,18 @@ footer {
 #herobg {
   background-color: #F2D2C3;
   margin: -44px 20px 0 0;
-  height: 720px; }
+  height: 100vh; }
 
 #hero {
   background-image: url("../img/hero/hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
-  margin-top: -720px;
+  background-position: center;
+  height: 105vh;
+  margin-top: -100vh;
   text-align: center; }
   #hero h1 {
-    padding: 380px 0 160px;
+    padding: 55vh 0 160px;
     font-size: 1.875rem; }
   #hero a {
     font-family: 'Marcellus', serif;
@@ -417,9 +418,21 @@ footer {
   font-size: 1.125rem;
   line-height: 24px;
   text-align: right; }
-  #why img {
-    width: 100%;
-    margin-top: 30px; }
+  @media (min-width: 567px) {
+    #why #gridtest {
+      display: grid;
+      grid-template-columns: 28% auto;
+      grid-template-areas: ". text"; } }
+  #why #arrow {
+    margin-top: 20px;
+    background-image: url("../img/why/why.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px; }
+  @media (min-width: 567px) {
+    #why p {
+      grid-area: text; } }
 
 /* =============
     Cancer
@@ -432,13 +445,13 @@ footer {
     background-image: url("../img/cancer/face1.svg");
     background-size: cover;
     grid-column: 4 / span 7;
-    grid-row: 1 / span 7; }
+    grid-row: 1 / span 8; }
     #cancerhero .cancergrid li:nth-child(1) img {
       width: 100%; }
   #cancerhero .cancergrid li:nth-child(2) {
-    grid-column: 2 / span 5;
+    grid-column: 1 / span 6;
     grid-row: 6 / span 4;
-    margin-left: -15px; }
+    margin-left: 20px; }
     #cancerhero .cancergrid li:nth-child(2) img {
       width: 100%; }
   #cancerhero .cancergrid li:nth-child(3) {
@@ -520,14 +533,14 @@ footer {
 ============= */
 #gallerybg {
   background-color: #F2D2C3;
-  height: 2350px;
+  height: 2800px;
   margin-left: 20px;
   margin-top: 60px;
-  margin-bottom: -2400px; }
-  #gallerybg img {
-    margin-top: -70px;
-    margin-left: 70px;
-    height: 2470px; }
+  margin-bottom: -2860px; }
+  @media (min-width: 567px) {
+    #gallerybg {
+      height: 3950px;
+      margin-bottom: -4010px; } }
 
 #gallery ul {
   display: grid;
@@ -537,39 +550,35 @@ footer {
 
 #gallery li:nth-child(1) {
   grid-area: photo1;
-  background-image: url("../img/gallery/photo1.jpg");
-  background-size: cover;
-  height: 375px; }
+  background-image: url("../img/gallery/photo1.jpg"); }
 
 #gallery li:nth-child(2) {
   grid-area: photo2;
-  background-image: url("../img/gallery/photo2.jpg");
-  background-size: cover;
-  height: 375px; }
+  background-image: url("../img/gallery/photo2.jpg"); }
 
 #gallery li:nth-child(3) {
   grid-area: photo3;
-  background-image: url("../img/gallery/photo3.jpg");
-  background-size: cover;
-  height: 375px; }
+  background-image: url("../img/gallery/photo3.jpg"); }
 
 #gallery li:nth-child(4) {
   grid-area: photo4;
-  background-image: url("../img/gallery/photo4.jpg");
-  background-size: cover;
-  height: 375px; }
+  background-image: url("../img/gallery/photo4.jpg"); }
 
 #gallery li:nth-child(5) {
   grid-area: photo5;
-  background-image: url("../img/gallery/photo5.jpg");
-  background-size: cover;
-  height: 375px; }
+  background-image: url("../img/gallery/photo5.jpg"); }
 
 #gallery li:nth-child(6) {
   grid-area: photo6;
-  background-image: url("../img/gallery/photo6.jpg");
+  background-image: url("../img/gallery/photo6.jpg"); }
+
+#gallery li {
   background-size: cover;
-  height: 375px; }
+  background-position: 60% 50%;
+  height: 50vh; }
+  @media (min-width: 567px) {
+    #gallery li {
+      height: 70vh; } }
 
 /* =============
     Form

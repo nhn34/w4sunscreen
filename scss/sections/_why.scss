@@ -7,10 +7,31 @@
     font-size: rem-calc(18);
     line-height: 24px;
     text-align: right;
-    img {
-        width: 100%;
-        margin-top: 30px;
+
+    #gridtest {
+        @include sm {
+            display: grid;
+            grid-template-columns: 28% auto;
+            grid-template-areas: ". text";
+        }
     }
+
+    #arrow {
+        margin-top: 20px;
+        background-image: url("../img/why/why.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 550px;
+    }
+
+    p {
+        @include sm {
+            grid-area: text;
+        }
+    }
+
+
 
 
 

@@ -4,7 +4,7 @@
 #herobg {
     background-color: $peach;
     margin: -44px 20px 0 0;
-    height: 720px;
+    height: 100vh;
 
 }
 #hero {
@@ -12,13 +12,18 @@
     background-image: url("../img/hero/hero.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 750px;
-    margin-top: -720px;
+    background-position: center;
+    height: 105vh;
+    margin-top: -100vh;
 
     text-align: center;
 
+    @include sm {
+        // width: 100vw;
+    }
+
     h1 {
-        padding: 380px 0 160px;
+        padding: 55vh 0 160px;
         font-size: rem-calc(30);
     }
 

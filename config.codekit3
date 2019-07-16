@@ -198,17 +198,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/hero/hero.png": {
-		"ft": 32768,
-		"iS": 17593,
-		"oA": 0,
-		"oAP": "/img/hero/hero.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/hero/hero.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -495,7 +484,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 584830205.94731998,
-	"displayValue": "w2sunscreen",
+	"displayValue": "w4sunscreen",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
 	"iconImageWasSetByUser": 0

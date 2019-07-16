@@ -4,16 +4,17 @@
 
 #gallerybg {
     background-color: $peach;
-    height: 2350px;
+    height: 2800px;
     margin-left: 20px;
     margin-top: 60px;
-    margin-bottom: -2400px;
+    margin-bottom: -2860px;
 
-    img {
-    margin-top: -70px;
-    margin-left: 70px;
-    height: 2470px;
+    @include sm {
+        height: 3950px;
+        margin-bottom: -4010px;
     }
+
+
 }
 
 #gallery {
@@ -35,43 +36,44 @@
     li:nth-child(1) {
         grid-area: photo1;
         background-image: url("../img/gallery/photo1.jpg");
-        background-size: cover;
-        height: 375px;
     }
 
     li:nth-child(2) {
         grid-area: photo2;
         background-image: url("../img/gallery/photo2.jpg");
-        background-size: cover;
-        height: 375px;
     }
 
     li:nth-child(3) {
         grid-area: photo3;
         background-image: url("../img/gallery/photo3.jpg");
-        background-size: cover;
-        height: 375px;
+
     }
 
     li:nth-child(4) {
         grid-area: photo4;
         background-image: url("../img/gallery/photo4.jpg");
-        background-size: cover;
-        height: 375px;
+
     }
 
     li:nth-child(5) {
         grid-area: photo5;
         background-image: url("../img/gallery/photo5.jpg");
-        background-size: cover;
-        height: 375px;
+
     }
 
     li:nth-child(6) {
         grid-area: photo6;
         background-image: url("../img/gallery/photo6.jpg");
+
+    }
+
+    li {
         background-size: cover;
-        height: 375px;
+        background-position: 60% 50%;
+        height: 50vh;
+        @include sm {
+            height: 70vh;
+        }
     }
 
 }

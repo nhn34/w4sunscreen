@@ -1,0 +1,33 @@
+/* =============
+    Hero
+============= */
+#herobg {
+    background-color: $peach;
+    margin: -44px 20px 0 0;
+    height: 720px;
+
+}
+#hero {
+
+    background-image: url("../img/hero/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    margin-top: -720px;
+
+    text-align: center;
+
+    h1 {
+        padding: 380px 0 160px;
+        font-size: rem-calc(30);
+    }
+
+    a {
+        font-family: 'Marcellus', serif;
+        color: $red;
+        border: 1px solid $red;
+        padding: 7px 20px;
+    }
+
+
+}

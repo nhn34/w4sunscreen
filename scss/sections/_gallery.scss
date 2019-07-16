@@ -1,0 +1,77 @@
+/* =============
+    Gallery
+============= */
+
+#gallerybg {
+    background-color: $peach;
+    height: 2350px;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: -2400px;
+
+    img {
+    margin-top: -70px;
+    margin-left: 70px;
+    height: 2470px;
+    }
+}
+
+#gallery {
+
+    ul {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto 20px;
+        grid-template-areas:
+        "photo1 ."
+        "photo2 ."
+        "photo3 ."
+        "photo4 ."
+        "photo5 ."
+        "photo6 .";
+
+    }
+
+    li:nth-child(1) {
+        grid-area: photo1;
+        background-image: url("../img/gallery/photo1.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+    li:nth-child(2) {
+        grid-area: photo2;
+        background-image: url("../img/gallery/photo2.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+    li:nth-child(3) {
+        grid-area: photo3;
+        background-image: url("../img/gallery/photo3.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+    li:nth-child(4) {
+        grid-area: photo4;
+        background-image: url("../img/gallery/photo4.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+    li:nth-child(5) {
+        grid-area: photo5;
+        background-image: url("../img/gallery/photo5.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+    li:nth-child(6) {
+        grid-area: photo6;
+        background-image: url("../img/gallery/photo6.jpg");
+        background-size: cover;
+        height: 375px;
+    }
+
+}

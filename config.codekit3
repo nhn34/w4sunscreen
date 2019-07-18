@@ -48,6 +48,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/anti/face2md.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/anti/face2md.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/anti/point2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -74,6 +84,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/cancer/face1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/cancer/face1md.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/cancer/face1md.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -208,11 +228,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/hero/heromd.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/hero/heromd.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/why/why.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/why/why.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/why/whymd.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/why/whymd.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

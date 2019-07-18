@@ -5,6 +5,9 @@
     background-color: $peach;
     margin: -44px 20px 0 0;
     height: 100vh;
+    @include md {
+        height: 65vh;
+    }
 
 }
 #hero {
@@ -18,13 +21,20 @@
 
     text-align: center;
 
-    @include sm {
-        // width: 100vw;
+    @include md {
+        background-image: url("../img/hero/heromd.svg");
+        // background-size: contain;
+        height: 70vh;
+        margin-top: -65vh;
     }
 
     h1 {
         padding: 55vh 0 160px;
         font-size: rem-calc(30);
+
+        @include md {
+            padding: 35vh 0 150px;
+        }
     }
 
     a {

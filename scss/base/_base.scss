@@ -24,6 +24,10 @@ a{
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". content .";
 
+    @include md {
+        grid-template-columns: 40px auto 40px;
+    }
+
     .content{
         grid-area: content;
     }

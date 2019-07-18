@@ -14,6 +14,10 @@
             grid-template-columns: 28% auto;
             grid-template-areas: ". text";
         }
+
+        @include md {
+            grid-template-columns: 50% auto;
+        }
     }
 
     #arrow {
@@ -23,6 +27,11 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 550px;
+
+        @include md {
+            background-image: url("../img/why/whymd.svg");
+            
+        }
     }
 
     p {

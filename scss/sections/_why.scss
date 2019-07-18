@@ -18,6 +18,10 @@
         @include md {
             grid-template-columns: 50% auto;
         }
+        @include lg {
+            grid-template-columns: 50% auto 10%;
+            grid-template-areas: ". text .";
+        }
     }
 
     #arrow {
@@ -30,8 +34,14 @@
 
         @include md {
             background-image: url("../img/why/whymd.svg");
-            
+            margin-top: 30px;
         }
+
+        @include lg {
+            background-image: url("../img/why/whylg.svg");
+            // margin-bottom: 100px;
+        }
+
     }
 
     p {

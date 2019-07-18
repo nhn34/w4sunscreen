@@ -23,10 +23,14 @@
 
     @include md {
         background-image: url("../img/hero/heromd.svg");
-        // background-size: contain;
-        // height: 70vh;
         margin-top: -110vh;
         height: 115vh;
+    }
+
+    @include lg {
+        background-image: url("../img/hero/herolg.svg");
+        margin-top: -130vh;
+        height: 136vh;
     }
 
     h1 {
@@ -35,6 +39,10 @@
 
         @include md {
             padding: 60vh 0 150px;
+        }
+        @include lg {
+            font-size: rem-calc(40);
+            padding: 80vh 0 150px;
         }
     }
 

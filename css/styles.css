@@ -337,6 +337,9 @@ a {
 
 .space {
   padding: 50px 0; }
+  @media (min-width: 950px) {
+    .space {
+      padding: 100px 0; } }
 
 /* =============
     Typography
@@ -409,12 +412,21 @@ footer {
       background-image: url("../img/hero/heromd.svg");
       margin-top: -110vh;
       height: 115vh; } }
+  @media (min-width: 950px) {
+    #hero {
+      background-image: url("../img/hero/herolg.svg");
+      margin-top: -130vh;
+      height: 136vh; } }
   #hero h1 {
     padding: 55vh 0 160px;
     font-size: 1.875rem; }
     @media (min-width: 703px) {
       #hero h1 {
         padding: 60vh 0 150px; } }
+    @media (min-width: 950px) {
+      #hero h1 {
+        font-size: 2.5rem;
+        padding: 80vh 0 150px; } }
   #hero a {
     font-family: 'Marcellus', serif;
     color: #FC3C2D;
@@ -437,6 +449,10 @@ footer {
   @media (min-width: 703px) {
     #why #gridtest {
       grid-template-columns: 50% auto; } }
+  @media (min-width: 950px) {
+    #why #gridtest {
+      grid-template-columns: 50% auto 10%;
+      grid-template-areas: ". text ."; } }
   #why #arrow {
     margin-top: 20px;
     background-image: url("../img/why/why.svg");
@@ -446,7 +462,11 @@ footer {
     height: 550px; }
     @media (min-width: 703px) {
       #why #arrow {
-        background-image: url("../img/why/whymd.svg"); } }
+        background-image: url("../img/why/whymd.svg");
+        margin-top: 30px; } }
+    @media (min-width: 950px) {
+      #why #arrow {
+        background-image: url("../img/why/whylg.svg"); } }
   @media (min-width: 567px) {
     #why p {
       grid-area: text; } }
@@ -467,6 +487,11 @@ footer {
       #cancerhero .cancergrid li:nth-child(1) {
         background-image: url("../img/cancer/face1md.svg");
         grid-row: 1 / span 8; } }
+    @media (min-width: 950px) {
+      #cancerhero .cancergrid li:nth-child(1) {
+        background-image: url("../img/cancer/face1lg.svg");
+        grid-column: 4 / span 7;
+        grid-row: 1 / span 9; } }
     #cancerhero .cancergrid li:nth-child(1) img {
       width: 100%; }
   #cancerhero .cancergrid li:nth-child(2) {
@@ -478,6 +503,10 @@ footer {
         grid-column: 1 / span 5;
         grid-row: 6 / span 4;
         margin-left: 40px; } }
+    @media (min-width: 950px) {
+      #cancerhero .cancergrid li:nth-child(2) {
+        grid-column: 1 / span 4;
+        grid-row: 7 / span 4; } }
     #cancerhero .cancergrid li:nth-child(2) img {
       width: 100%; }
   #cancerhero .cancergrid li:nth-child(3) {
@@ -488,6 +517,9 @@ footer {
     @media (min-width: 703px) {
       #cancerhero .cancergrid li:nth-child(3) {
         grid-row: 6 / span 3; } }
+    @media (min-width: 950px) {
+      #cancerhero .cancergrid li:nth-child(3) {
+        grid-row: 7 / span 3; } }
     #cancerhero .cancergrid li:nth-child(3) img {
       width: 100%; }
   #cancerhero .cancergrid li:nth-child(4) {
@@ -502,6 +534,9 @@ footer {
         font-size: 3.75rem;
         margin-left: 0;
         grid-column: 2 / span 4; } }
+    @media (min-width: 950px) {
+      #cancerhero .cancergrid li:nth-child(4) {
+        grid-column: 2 / span 5; } }
 
 #cancer {
   margin-top: -50px; }
@@ -517,6 +552,9 @@ footer {
     display: block;
     margin: 0 auto;
     padding-top: 40px; }
+    @media (min-width: 950px) {
+      #cancer img {
+        padding-top: 100px; } }
   @media (min-width: 703px) {
     #cancer article {
       display: grid;
@@ -529,6 +567,10 @@ footer {
         grid-area: p2; }
       #cancer article p:nth-child(3) {
         grid-area: p3; } }
+  @media (min-width: 950px) {
+    #cancer article {
+      grid-template-columns: 50% auto 10%;
+      grid-template-areas: ". p1" ". p2" ". p3"; } }
 
 /* =============
     Anti
@@ -549,6 +591,12 @@ footer {
         background-image: url("../img/anti/face2md.svg");
         grid-column: 1 / span 7;
         grid-row: 3 / span 8; } }
+    @media (min-width: 950px) {
+      #antihero .herogrid li:nth-child(1) {
+        background-image: url("../img/anti/face2lg.svg");
+        grid-column: 1 / span 7;
+        grid-row: 2 / span 9;
+        margin-top: 0; } }
     #antihero .herogrid li:nth-child(1) img {
       width: 100%; }
   #antihero .herogrid li:nth-child(2) {
@@ -558,6 +606,10 @@ footer {
     @media (min-width: 703px) {
       #antihero .herogrid li:nth-child(2) {
         grid-row: 1 / span 6; } }
+    @media (min-width: 950px) {
+      #antihero .herogrid li:nth-child(2) {
+        grid-column: 7 / span 4;
+        grid-row: 1 / span 7; } }
     #antihero .herogrid li:nth-child(2) img {
       width: 100%; }
   #antihero .herogrid li:nth-child(3) {
@@ -581,6 +633,9 @@ footer {
         font-size: 3.75rem;
         margin-left: 0;
         grid-row: 8 / span 1; } }
+    @media (min-width: 950px) {
+      #antihero .herogrid li:nth-child(4) {
+        grid-row: 9 / span 1; } }
     #antihero .herogrid li:nth-child(4) img {
       width: 100%; }
 
@@ -595,6 +650,9 @@ footer {
   display: block;
   margin: 0 auto;
   padding-top: 40px; }
+  @media (min-width: 950px) {
+    #anti img {
+      padding-top: 100px; } }
 
 @media (min-width: 703px) {
   #anti article {
@@ -606,6 +664,11 @@ footer {
       grid-area: p1; }
     #anti article p:nth-child(2) {
       grid-area: p2; } }
+
+@media (min-width: 950px) {
+  #anti article {
+    grid-template-columns: 10% auto 50%;
+    grid-template-areas: ". p1 ." ". p2 ."; } }
 
 /* =============
     Gallery
@@ -676,11 +739,23 @@ footer {
 ============= */
 #form {
   padding-top: 150px; }
+  @media (min-width: 950px) {
+    #form div {
+      display: grid;
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-areas: ". text form ."; } }
+  @media (min-width: 950px) {
+    #form article {
+      grid-area: text; } }
   #form h1 {
     text-align: center; }
     @media (min-width: 703px) {
       #form h1 {
         font-size: 3.75rem; } }
+    @media (min-width: 950px) {
+      #form h1 {
+        font-size: 2.25rem;
+        text-align: left; } }
   #form h2 {
     text-align: center;
     font-family: 'Marcellus', serif;
@@ -690,6 +765,13 @@ footer {
     @media (min-width: 703px) {
       #form h2 {
         font-size: 1.875rem; } }
+    @media (min-width: 950px) {
+      #form h2 {
+        font-size: 1.25rem;
+        text-align: left; } }
+  @media (min-width: 950px) {
+    #form form {
+      grid-area: form; } }
   #form form label {
     margin: 0; }
   #form form input[type=text], #form form select, #form form textarea {
@@ -699,6 +781,9 @@ footer {
     box-sizing: border-box;
     margin-top: 6px;
     resize: vertical; }
+    @media (min-width: 950px) {
+      #form form input[type=text], #form form select, #form form textarea {
+        box-sizing: content-box; } }
   #form form input[type=submit] {
     font-family: 'Marcellus', serif;
     background-color: #FC3C2D;

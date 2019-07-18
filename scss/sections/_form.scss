@@ -4,12 +4,32 @@
 
 #form {
     padding-top: 150px;
+    div {
+        @include lg {
+            display: grid;
+            grid-template-columns: 10% auto auto 10%;
+            grid-template-areas: ". text form ."
+        }
+    }
+
+    article {
+        @include lg {
+            grid-area: text;
+
+        }
+    }
     h1 {
         text-align: center;
 
         @include md {
             font-size: rem-calc(60);
+
         }
+        @include lg {
+            font-size: rem-calc(36);
+            text-align: left;
+        }
+
     }
     h2 {
         text-align: center;
@@ -22,10 +42,19 @@
             font-size: rem-calc(30);
         }
 
+        @include lg {
+            font-size: rem-calc(20);
+            text-align: left;
+
+        }
+
 
     }
 
     form{
+        @include lg{
+            grid-area: form;
+        }
         label{
             margin: 0;
         }
@@ -37,6 +66,9 @@ input[type=text], select, textarea {
   box-sizing: border-box;
   margin-top: 6px;
   resize: vertical;
+  @include lg {
+      box-sizing: content-box;
+  }
 }
 input[type=submit] {
 font-family: 'Marcellus', serif;

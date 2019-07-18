@@ -3,10 +3,10 @@
 ============= */
 #herobg {
     background-color: $peach;
-    margin: -44px 20px 0 0;
+    margin: -44px 40px 0 0;
     height: 100vh;
     @include md {
-        height: 65vh;
+        // height: 65vh;
     }
 
 }
@@ -24,8 +24,9 @@
     @include md {
         background-image: url("../img/hero/heromd.svg");
         // background-size: contain;
-        height: 70vh;
-        margin-top: -65vh;
+        // height: 70vh;
+        margin-top: -110vh;
+        height: 115vh;
     }
 
     h1 {
@@ -33,7 +34,7 @@
         font-size: rem-calc(30);
 
         @include md {
-            padding: 35vh 0 150px;
+            padding: 60vh 0 150px;
         }
     }
 

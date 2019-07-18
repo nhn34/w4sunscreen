@@ -13,6 +13,11 @@
         height: 3950px;
         margin-bottom: -4010px;
     }
+    @include md {
+        height: 1370px;
+        margin-bottom: -1430px;
+        margin-left: 40px;
+    }
 
 
 }
@@ -30,6 +35,22 @@
         "photo4 ."
         "photo5 ."
         "photo6 .";
+
+        @include md {
+            grid-template-columns: auto auto 20px;
+            // grid-column-gap: 40px;
+            grid-template-areas:
+            "photo1 . ."
+            "photo1 photo2 ."
+            "photo1 photo2 ."
+            "photo3 photo2 ."
+            "photo3 photo4 ."
+            "photo3 photo4 ."
+            "photo5 photo4 ."
+            "photo5 photo6 ."
+            "photo5 photo6 ."
+            ". photo6 ."
+        }
 
     }
 
@@ -73,6 +94,10 @@
         height: 50vh;
         @include sm {
             height: 70vh;
+        }
+
+        @include md {
+            height: 400px;
         }
     }
 

@@ -385,7 +385,7 @@ header i {
 footer {
   background-color: #F2D2C3;
   padding: 30px 0;
-  margin-right: 20px;
+  margin-right: 40px;
   text-align: center; }
 
 /* =============
@@ -393,11 +393,8 @@ footer {
 ============= */
 #herobg {
   background-color: #F2D2C3;
-  margin: -44px 20px 0 0;
+  margin: -44px 40px 0 0;
   height: 100vh; }
-  @media (min-width: 703px) {
-    #herobg {
-      height: 65vh; } }
 
 #hero {
   background-image: url("../img/hero/hero.svg");
@@ -410,14 +407,14 @@ footer {
   @media (min-width: 703px) {
     #hero {
       background-image: url("../img/hero/heromd.svg");
-      height: 70vh;
-      margin-top: -65vh; } }
+      margin-top: -110vh;
+      height: 115vh; } }
   #hero h1 {
     padding: 55vh 0 160px;
     font-size: 1.875rem; }
     @media (min-width: 703px) {
       #hero h1 {
-        padding: 35vh 0 150px; } }
+        padding: 60vh 0 150px; } }
   #hero a {
     font-family: 'Marcellus', serif;
     color: #FC3C2D;
@@ -511,6 +508,9 @@ footer {
   #cancer p {
     padding-bottom: 10px;
     line-height: 20px; }
+    @media (min-width: 703px) {
+      #cancer p {
+        padding-bottom: 0; } }
     #cancer p span {
       color: #FC3C2D; }
   #cancer img {
@@ -544,12 +544,20 @@ footer {
     grid-row: 3 / span 8;
     margin-left: -40px;
     margin-top: -40px; }
+    @media (min-width: 703px) {
+      #antihero .herogrid li:nth-child(1) {
+        background-image: url("../img/anti/face2md.svg");
+        grid-column: 1 / span 7;
+        grid-row: 3 / span 8; } }
     #antihero .herogrid li:nth-child(1) img {
       width: 100%; }
   #antihero .herogrid li:nth-child(2) {
     grid-column: 6 / span 6;
     grid-row: 1 / span 5;
-    margin-right: 20px; }
+    margin-right: 40px; }
+    @media (min-width: 703px) {
+      #antihero .herogrid li:nth-child(2) {
+        grid-row: 1 / span 6; } }
     #antihero .herogrid li:nth-child(2) img {
       width: 100%; }
   #antihero .herogrid li:nth-child(3) {
@@ -557,25 +565,47 @@ footer {
     grid-row: 2 / span 4;
     margin-top: 20px;
     margin-right: 20px; }
+    @media (min-width: 703px) {
+      #antihero .herogrid li:nth-child(3) {
+        grid-row: 5 / span 4; } }
     #antihero .herogrid li:nth-child(3) img {
       width: 100%; }
   #antihero .herogrid li:nth-child(4) {
     grid-column: 6 / span 6;
     grid-row: 7 / span 1;
     font-family: 'Marcellus', serif;
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     color: #FC3C2D; }
+    @media (min-width: 703px) {
+      #antihero .herogrid li:nth-child(4) {
+        font-size: 3.75rem;
+        margin-left: 0;
+        grid-row: 8 / span 1; } }
     #antihero .herogrid li:nth-child(4) img {
       width: 100%; }
 
 #anti p {
   padding-bottom: 10px;
   line-height: 20px; }
+  @media (min-width: 703px) {
+    #anti p {
+      padding-bottom: 0; } }
 
 #anti img {
   display: block;
   margin: 0 auto;
   padding-top: 40px; }
+
+@media (min-width: 703px) {
+  #anti article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "p1 p2"; }
+    #anti article p:first-child {
+      grid-area: p1; }
+    #anti article p:nth-child(2) {
+      grid-area: p2; } }
 
 /* =============
     Gallery
@@ -590,12 +620,21 @@ footer {
     #gallerybg {
       height: 3950px;
       margin-bottom: -4010px; } }
+  @media (min-width: 703px) {
+    #gallerybg {
+      height: 1370px;
+      margin-bottom: -1430px;
+      margin-left: 40px; } }
 
 #gallery ul {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: auto 20px;
   grid-template-areas: "photo1 ." "photo2 ." "photo3 ." "photo4 ." "photo5 ." "photo6 ."; }
+  @media (min-width: 703px) {
+    #gallery ul {
+      grid-template-columns: auto auto 20px;
+      grid-template-areas: "photo1 . ." "photo1 photo2 ." "photo1 photo2 ." "photo3 photo2 ." "photo3 photo4 ." "photo3 photo4 ." "photo5 photo4 ." "photo5 photo6 ." "photo5 photo6 ." ". photo6 ."; } }
 
 #gallery li:nth-child(1) {
   grid-area: photo1;
@@ -628,6 +667,9 @@ footer {
   @media (min-width: 567px) {
     #gallery li {
       height: 70vh; } }
+  @media (min-width: 703px) {
+    #gallery li {
+      height: 400px; } }
 
 /* =============
     Form
@@ -636,12 +678,18 @@ footer {
   padding-top: 150px; }
   #form h1 {
     text-align: center; }
+    @media (min-width: 703px) {
+      #form h1 {
+        font-size: 3.75rem; } }
   #form h2 {
     text-align: center;
     font-family: 'Marcellus', serif;
     font-size: 1.125rem;
     font-weight: 400;
     padding: 10px 0; }
+    @media (min-width: 703px) {
+      #form h2 {
+        font-size: 1.875rem; } }
   #form form label {
     margin: 0; }
   #form form input[type=text], #form form select, #form form textarea {

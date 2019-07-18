@@ -80,6 +80,9 @@
     p {
     padding-bottom: 10px;
     line-height: 20px;
+    @include md {
+        padding-bottom: 0;
+    }
 
 
     span {
@@ -91,6 +94,7 @@
         display: block;
         margin: 0 auto;
         padding-top: 40px;
+        
     }
 
     article {

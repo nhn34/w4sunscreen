@@ -4,10 +4,15 @@
 
 #form {
     padding-top: 150px;
-    div {
+    .content {
         @include lg {
             display: grid;
             grid-template-columns: 10% auto auto 10%;
+            grid-template-areas: ". text form ."
+        }
+        @include xl {
+
+            grid-template-columns: auto 330px 330px auto;
             grid-template-areas: ". text form ."
         }
     }

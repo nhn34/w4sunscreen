@@ -22,6 +22,18 @@
             grid-template-columns: 50% auto 10%;
             grid-template-areas: ". text .";
         }
+        @include xl {
+            grid-template-columns: auto 330px 15%;
+            grid-template-areas: ". text .";
+        }
+    }
+
+    #gridarrow {
+        @include xl{
+        display: grid;
+        grid-template-columns: auto 660px auto;
+        grid-template-areas: ". arrow .";
+    }
     }
 
     #arrow {
@@ -39,8 +51,15 @@
 
         @include lg {
             background-image: url("../img/why/whylg.svg");
-            // margin-bottom: 100px;
         }
+
+        @include xl {
+            background-image: url("../img/why/whyxl.svg");
+            grid-area: arrow;
+
+        }
+
+
 
     }
 

@@ -30,6 +30,14 @@
                 margin-top: 0;
             }
 
+            @include xl {
+                background-image: url("../img/anti/face2xl.svg");
+                grid-column: 1 / span 8;
+                grid-row: 1 / span 10;
+
+            }
+
+
             img{
                 width: 100%;
             }
@@ -48,6 +56,11 @@
                 grid-column: 7 / span 4;
                 grid-row: 1 / span 7;
             }
+
+            @include xl {
+                grid-column: 8 / span 3;
+                grid-row: 1 / span 6;
+            }
             img{
                 width: 100%;
             }
@@ -61,6 +74,11 @@
 
             @include md {
                 grid-row: 5 / span 4;
+            }
+
+            @include xl {
+                grid-row: 3 / span 4;
+                grid-column: 5 / span 4;
             }
             img{
                 width: 100%;
@@ -81,7 +99,9 @@
             }
             @include lg {
                 grid-row: 9 / span 1;
-
+            }
+            @include xl {
+                grid-column: 8 / span 3;
             }
             img{
                 width: 100%;
@@ -128,7 +148,13 @@
             grid-template-areas:
             ". p1 ."
             ". p2 .";
+        }
 
+        @include xl {
+            grid-template-columns: auto 495px 50%;
+            grid-template-areas:
+            ". p1 ."
+            ". p2 ."
         }
     }
 }

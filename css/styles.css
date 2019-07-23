@@ -726,10 +726,10 @@ footer {
 ============= */
 #gallerybg {
   background-color: #F2D2C3;
-  height: 2800px;
+  height: 2850px;
   margin-left: 20px;
   margin-top: 60px;
-  margin-bottom: -2860px; }
+  margin-bottom: -2910px; }
   @media (min-width: 567px) {
     #gallerybg {
       height: 3950px;
@@ -754,14 +754,16 @@ footer {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: auto 20px;
-  grid-template-rows: repeat(6, 70vh);
+  grid-template-rows: repeat(6, 50vh);
   grid-template-areas: "photo1 ." "photo2 ." "photo3 ." "photo4 ." "photo5 ." "photo6 ."; }
+  @media (min-width: 567px) {
+    #gallery ul {
+      grid-template-rows: repeat(6, 70vh); } }
   @media (min-width: 703px) {
     #gallery ul {
       grid-template-columns: auto auto 20px;
-      grid-template-rows: repeat(10, 400px);
-      grid-template-areas: "photo1 . ." "photo1 photo2 ." "photo1 photo2 ." "photo3 photo2 ." "photo3 photo4 ." "photo3 photo4 ." "photo5 photo4 ." "photo5 photo6 ." "photo5 photo6 ." ". photo6 .";
-      grid-template-rows: repeat(10, 1fr); } }
+      grid-template-rows: repeat(10, 120px);
+      grid-template-areas: "photo1 . ." "photo1 photo2 ." "photo1 photo2 ." "photo3 photo2 ." "photo3 photo4 ." "photo3 photo4 ." "photo5 photo4 ." "photo5 photo6 ." "photo5 photo6 ." ". photo6 ."; } }
   @media (min-width: 950px) {
     #gallery ul {
       display: grid;

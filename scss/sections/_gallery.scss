@@ -4,10 +4,10 @@
 
 #gallerybg {
     background-color: $peach;
-    height: 2800px;
+    height: 2850px;
     margin-left: 20px;
     margin-top: 60px;
-    margin-bottom: -2860px;
+    margin-bottom: -2910px;
 
     @include sm {
         height: 3950px;
@@ -39,7 +39,7 @@
         display: grid;
         grid-gap: 20px;
         grid-template-columns: auto 20px;
-        grid-template-rows: repeat(6, 70vh);
+        grid-template-rows: repeat(6, 50vh);
         grid-template-areas:
         "photo1 ."
         "photo2 ."
@@ -48,9 +48,13 @@
         "photo5 ."
         "photo6 .";
 
+        @include sm {
+            grid-template-rows: repeat(6, 70vh);
+        }
+
         @include md {
             grid-template-columns: auto auto 20px;
-            grid-template-rows: repeat(10, 400px);
+            grid-template-rows: repeat(10, 120px);
             grid-template-areas:
             "photo1 . ."
             "photo1 photo2 ."
@@ -62,7 +66,6 @@
             "photo5 photo6 ."
             "photo5 photo6 ."
             ". photo6 .";
-            grid-template-rows: repeat(10, 1fr);
         }
 
         @include lg {

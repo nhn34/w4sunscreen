@@ -744,7 +744,7 @@ footer {
       height: 2000px;
       margin-bottom: -2060px;
       margin-left: 40px; } }
-  @media (min-width: 950px) {
+  @media (min-width: 1200px) {
     #gallerybg {
       height: 2300px;
       margin-bottom: -2360px;
